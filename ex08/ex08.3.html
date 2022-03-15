@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 1.2em
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            background-color: rgb(34, 34, 34);
+        }
+
+        h1 {
+            background-color: white;
+            color: rgb(34, 34, 34);
+            padding: 12px;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        input {
+            border: none;
+            padding: 6px;
+            border-radius: 3px;
+        }
+
+        #botao:hover {
+            cursor: pointer;
+            background-color: rgb(207, 207, 207);
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Você é de qual país? <input type="text" name="pais" id="pais">
+    <input id="botao" type="button" value="Confirmar" onclick="clicar()">
+    <div id="res"></div>
+    
+    <script>
+
+        function clicar() {
+            var nac = document.querySelector('input#pais').value.toLowerCase();
+            var res = document.querySelector('div#res');
+            if (nac == 'brasil') {
+                res.innerHTML = `<p>Você é brasileiro!`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!`
+            }
+        }
+
+    </script>
+</body>
+</html>
