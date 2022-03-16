@@ -16,4 +16,3 @@ function calcular() {
         }
     }
 }
-//Refazer utilizando for
