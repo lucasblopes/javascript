@@ -1,12 +1,12 @@
 let num = document.querySelector('input#fnum')
-let lista = document.querySelector('select#flista')
+let lista = document.querySelector('select#flista') //select
 let res = document.querySelector('div#res')
 let valores = [] //Array
 
 //DETERMINANDO LIMITES DE ENTRADA
 
 function isNumero(n) {
-    if(Number(n) >=1 && Number(n) <= 100) {
+    if(Number(n) >=1 && Number(n) <= 100) { //n entre 1 e 100
         return true
     } else {
         return false
